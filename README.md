@@ -4,6 +4,11 @@
 [image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
+# Dog Breed Classifier [Capstone Project].
+## Acknowledgments
+This project is performed as part of [Udacity Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025).
+
+Variant of the starting code is provided by Udacity. If you are interested in reproducing this task your self right from the start, you can find starting code in their [Github repo](https://github.com/udacity/dog-project)
 
 ## Project Overview
 
@@ -19,13 +24,17 @@ Along with exploring state-of-the-art CNN models for classification, you will ma
 
 1. Clone the repository and navigate to the downloaded folder.
 ```	
-git clone https://github.com/udacity/dog-project.git
+git clone https://github.com/epiphian/dog-project.git
 cd dog-project
 ```
 
 2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
+Paste the path to this folder in dog_app.ipynb into `DOG_IMAGES_PATH` variable. This path should be relative to the project root folder, where dog_app.ipynb is situated. For example, if dog_app.ipynb and dogImages are in the same folder, it should look like 
+`DOG_IMAGES_PATH = 'dog_images/'`
+
 
 3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+Paste the path to this folder in dog_app.ipynb into `HUMAN_IMAGES_PATH` variable. This path should be relative to the project root folder, where dog_app.ipynb is situated. For example, if dog_app.ipynb and lfw are in the same folder, it should look like `HUMAN_IMAGES_PATH = 'lfw/'`
 
 4. Download the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
 
@@ -99,8 +108,6 @@ jupyter notebook dog_app.ipynb
 ```
 
 12. (Optional) **If you are running the project on your local machine (and not using AWS)**, before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
-
-__NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
 
 ## Evaluation
 
